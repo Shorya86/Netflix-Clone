@@ -28,7 +28,8 @@ body {
     top: 0;
     background-color: black;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     width: 76vw;
@@ -39,38 +40,44 @@ nav{
     align-items: center;
 }
 
-nav img{
+nav img {
     width: 150px;
 }
-.right-top{
+
+.right-top {
     display: flex;
 }
-.imgg{
+
+.imgg {
     display: flex;
     border: 2px solid #ffffff59;
     margin-right: 1vw;
     padding: 4px 25px;
     border-radius: 8px;
 }
-.imgg img{
+
+.imgg img {
     width: 20px;
     height: 20px;
 }
 
-.eng{
+.eng {
     color: white;
     padding-left: 10px;
 }
 
-nav .sign{
+nav .sign {
     background-color: red;
     color: white;
     padding: 5px 17px;
     border-radius: 8px;
     font-weight: 600;
+    cursor: pointer;
 }
-
-main{
+nav .sign:hover{
+    background-color: rgb(228, 2, 2);
+}
+main {
     color: white;
     position: relative;
     z-index: 1;
@@ -81,23 +88,27 @@ main{
     align-items: center;
     text-align: center;
 }
-main .mid{
+
+main .mid {
     margin: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.mid h1{
+
+.mid h1 {
     font-size: 45px;
 }
-.mid .f{
+
+.mid .f {
     font-size: 22px;
 }
-.mid .s{
+
+.mid .s {
     font-size: 19px;
 }
 
-.mid-btns input{
+.mid-btns input {
     background-color: #00000000;
     width: 35%;
     padding: 19px;
@@ -105,7 +116,8 @@ main .mid{
     border: 0.5px solid #ffffff6b;
     color: white;
 }
-.btn-red{
+
+.btn-red {
     background-color: red;
     width: 24%;
     padding: 10px 5px 15px 5px;
@@ -113,8 +125,12 @@ main .mid{
     color: white;
     border-radius: 8px;
     font-weight: bold;
+    cursor: pointer;
 }
 
+.btn-red:hover{
+    background-color: rgb(228, 2, 2);
+}
 
 .separation {
     height: 7px;
@@ -124,39 +140,45 @@ main .mid{
 }
 
 /* first */
-.slide-1{
+.slide-1 {
     /* border: 2px solid white; */
     height: 560px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 22px;
-    
+
 }
-.slide-1 .left-1{
+
+.slide-1 .left-1 {
     /* border: 2px solid white; */
     width: 45vw;
     height: auto;
     color: white;
 }
-.slide-1 .left-1 h1{
+
+.slide-1 .left-1 h1 {
     font-weight: 700;
     font-size: 45px;
     margin-bottom: 15px;
 }
-.slide-1 .left-1 p{
+
+.slide-1 .left-1 p {
     font-size: 22px;
 }
-.slide-1 .right-1{
+
+.slide-1 .right-1 {
     display: flex;
 }
-.slide-1 .right-1 img{
+
+.slide-1 .right-1 img {
     width: 35vw;
     height: auto;
     position: relative;
     z-index: 20;
 }
-.slide-1 .right-1 video{
+
+.slide-1 .right-1 video {
     width: 26vw;
     height: auto;
     position: absolute;
@@ -164,21 +186,24 @@ main .mid{
     margin-left: 4vw;
 }
 
-.slide-1 .right-1 .video-3{
+.slide-1 .right-1 .video-3 {
     width: 21vw;
     height: auto;
     position: absolute;
     margin-top: 2vw;
     margin-left: 7vw;
 }
-.slide-1 .right-2{
+
+.slide-1 .right-2 {
     display: flex;
     position: relative;
 }
-.right-2 img{
+
+.right-2 img {
     width: 35vw;
 }
-.stranger{
+
+.stranger {
     border: 2px solid white;
     height: 80px;
     width: 53%;
@@ -196,25 +221,29 @@ main .mid{
     align-items: center;
 }
 
-.stranger img{
+.stranger img {
     height: 90%;
     width: 22%;
 }
-.stranger p{
+
+.stranger p {
     font-size: 15px;
 }
-.stranger .ss{
+
+.stranger .ss {
     height: 34%;
     width: 15%;
 }
-.slide-2{
+
+.slide-2 {
     flex-direction: row-reverse;
 }
 
 /* questions */
-.question{
+.question {
     /* border: 2px solid white; */
-    height: 800px;
+    height: auto;
+    margin-bottom: 40px;
     display: flex;
     justify-items: center;
     flex-direction: column;
@@ -222,11 +251,13 @@ main .mid{
     padding-top: 50px;
     gap: 8px;
 }
-.question h1{
+
+.question h1 {
     font-size: 3rem;
     font-weight: 900;
 }
-.boxes-1{
+
+.boxes-1 {
     /* border: 2px solid white; */
     width: 71vw;
     font-size: 24px;
@@ -234,21 +265,54 @@ main .mid{
     background-color: #2d2d2d;
     display: flex;
     justify-content: space-between;
-}
-.boxes-1:hover {
-    background-color: rgb(98, 98, 98)
+    cursor: pointer;
 }
 
-.question .s{
+.hidden {
+    /* border: 2px solid white; */
+    width: 71vw;
+    font-size: 24px;
+    padding: 22px;
+    background-color: #2d2d2d;
+    display: none;
+    margin-top: -7px;
+
+}
+
+.boxes-1:hover {
+    background-color: #525252;
+}
+
+.question .s {
     font-size: 19px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.q-btn{
+
+.hidden-text {
+    width: 71vw;
+    font-size: 24px;
+    /* padding: 22px; */
+    background-color: #2d2d2d;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: -7px;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  }
+  
+  .hidden-text.show {
+    max-height: 200px; /* Adjust based on content */
+    opacity: 1;
+    padding: 22px; /* Ensure padding is applied during transition */
+  }
+
+.q-btn {
     /* border: 2px solid white; */
     width: 40vw;
 }
-.q-btn input{
+
+.q-btn input {
     background-color: #00000000;
     width: 52%;
     padding: 19px;
@@ -257,7 +321,7 @@ main .mid{
     color: white;
 }
 
-.redd{
+.redd {
     background-color: red;
     width: 32%;
     padding: 10px 5px 15px 5px;
@@ -265,6 +329,11 @@ main .mid{
     color: white;
     border-radius: 8px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.redd:hover{
+    background-color: rgb(228, 2, 2);
 }
 
 /* footer */
@@ -283,13 +352,16 @@ footer {
 
 .footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
-    gap: 20px; /* Optional: Add space between columns */
+    grid-template-columns: repeat(4, 1fr);
+    /* Create 4 equal columns */
+    gap: 20px;
+    /* Optional: Add space between columns */
 }
 
 .footer-item {
     display: flex;
-    flex-direction: column; /* Arrange links in a column */
+    flex-direction: column;
+    /* Arrange links in a column */
 }
 
 .footer-item a {
@@ -301,7 +373,7 @@ footer {
 .footer-item a:hover {
     text-decoration: underline;
 }
-.lastt{
+
+.lastt {
     margin-left: 39vw;
 }
-
